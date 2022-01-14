@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./../src/style/style.css" />
+    <link rel="icon" href="./../src/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./../src/style/navMenu.css" />
+    <link rel="stylesheet" href="./../src/style/scanner.css" />
+
+    <title>Scanner | Lightning QR</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="./../index.html">
+          <img src="./../src/images/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./../index.html">Home</a></li>
+        <li><a href="./generator.html">Generator</a></li>
+        <li>
+          <a href="./scannner.html" style="text-shadow: -1px -1px 1px #f0094a"
+            >Scanner</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div id="canvas-shapes"></div>
+    <div class="sc-content">
+      <div class="inner1">
+        <h1>QR Scanner</h1>
+        <div class="input_div">
+          <a href="#" id="resultAnchor" target="blank">Result</a>
+        </div>
+        <div class="sc-buttons">
+          <button class="custom-btn btn-5" id="previous_btn">
+            <span>Previous</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="inner2">
+        <video id="preview"></video>
+      </div>
+    </div>
+
+    <div class="previous-section" id="previous-section">
+      <h2 class="aboutus-title">Previous Links</h2>
+      <div class="link-list">
+        <ul id="previousLink">
+
+        </ul>
+      </div>
+      <button class="custom-btn btn-5" id="close_btn">
+        <span>Close</span>
+      </button>
+    </div>
+
+    <script src="./../src/script/background.js"></script>
+    <script src="./../src/script/navMenu.js"></script>
+    <script src="./../src/script/scanner.js"></script>
+    <script src="./../src/script/scannerScript.js"></script>
+  </body>
+</html>
