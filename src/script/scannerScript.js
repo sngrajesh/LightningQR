@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     r.innerHTML = content;
     console.log(content);
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode("Four"));
+    li.innerHTML = content;
     ul.appendChild(li);
   });
 });
